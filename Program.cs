@@ -330,5 +330,169 @@
 // method overloading, method overriding
 // 4. Abstraction
 
-// Inheritance Topics
+// Inheritance Topics:
+// Inheritance is an OOP concept where one class (called the child/derived class) acquires the properties and methods of another class (called the parent/base class).
+
+// class Animal
+// {
+//     public void Eat()
+//     {
+//         Console.WriteLine("Animal is eating");
+//     }
+// }
+
+// class Dog : Animal
+// {
+//     public void Bark()
+//     {
+//         Console.WriteLine("Dog is barking");
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         Dog pet = new Dog();
+//         pet.Eat();
+//     }
+// }
+
+
+// TYpes of Inheritance:
+
+// 1. Single Inheritance: (one parent one child)
+// One child class inherits from one parent class. 
+
+// class A {
+//     public void show() {
+//         Console.WriteLine("Class A");
+//     }
+// }
+
+// class B : A {
+
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         B shows = new B();
+//         shows.show();
+//     }
+// }
+
+// 2. Multilevel Inheritance: (loop of parent and child i.e. grandfather -> father -> son)
+// A class is derived from another derived class.
+
+// class A
+// {
+//     public void ShowA(string name) {
+//         Console.WriteLine(name);
+//     }
+// }
+
+// class B : A
+// {
+//     public void ShowB() { }
+// }
+
+// class C : B
+// {
+//     public void ShowC() { }
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         C alpha = new C();
+//         alpha.ShowA("hello");
+//     }
+// }
+
+// 3. Hierarchical Inheritance (one parent many child)
+// Multiple child classes inherit from the same parent class.
+
+// class A
+// {
+//     public void ShowA(string name) {
+//         Console.WriteLine(name);
+//     }
+// }
+
+// class B : A
+// {
+//     public void ShowB() { }
+// }
+
+// class C : A
+// {
+//     public void ShowC() { }
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         C alpha = new C();
+//         alpha.ShowA("hello");
+//     }
+// }
+
+// Polimorpism Topics
+// Polymorphism means “many forms.”
+// In OOPS, it allows the same method name to behave differently based on the object or situation.
+
+// 1. Method Overriding: (example: same person but differ behaviour)
+// Child class provides its own implementation of a virtual method.
+// -> different class but same method
+
+// class Animal {
+//     public virtual void sounds() {
+//         Console.WriteLine("animal like sound");
+//     }
+// }
+
+// class Dog : Animal {
+//     public override void sounds() {
+//         Console.WriteLine("bhoo bhoo");
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         Animal so_und = new Dog();
+//         so_und.sounds();
+//     }
+// }
+
+// 2. Method overloading: (example: same method but diffe parameters)
+// ---> same class but different method with parameter
+
+// class Calculator
+// {
+//     public int Add(int a, int b)
+//     {
+//         return a + b;
+//     }
+
+//     public int Add(int a, int b, int c)
+//     {
+//         return a + b + c;
+//     }
+
+//     public double Add(double a, double b)
+//     {
+//         return a + b;
+//     }
+// }
+
+// class Program {
+//     static void Main(string[] args) 
+//     {
+//         Calculator calc = new Calculator();
+
+//         int receive_1 = calc.Add(2, 3);
+//         Console.WriteLine(receive_1);
+//         int receive_2 = calc.Add(2, 3, 4);
+//         Console.WriteLine(receive_2);
+//         double receive_3 = calc.Add(2.5, 3.5);
+//         Console.WriteLine(receive_3);
+
+//     }
+// }
 
