@@ -43,3 +43,18 @@ C:\Users\Administrator\Desktop\C_sharp_course\bin\Debug\net9.0\C_sharp_course.dl
 C:\Users\Administrator\Desktop\C_sharp_course\bin\Debug\net9.0\C_sharp_course.pdb
 C:\Users\Administrator\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\C_sharp_course\obj\Debug\net9.0\ref\C_sharp_course.dll
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\bin\Debug\net9.0\C_sharp_course.exe
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\bin\Debug\net9.0\C_sharp_course.deps.json
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\bin\Debug\net9.0\C_sharp_course.runtimeconfig.json
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\bin\Debug\net9.0\C_sharp_course.dll
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\bin\Debug\net9.0\C_sharp_course.pdb
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.AssemblyInfoInputs.cache
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.AssemblyInfo.cs
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.csproj.CoreCompileInputs.cache
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.sourcelink.json
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.dll
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\refint\C_sharp_course.dll
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.pdb
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\C_sharp_course.genruntimeconfig.cache
+C:\Users\AA COMPUTER\Desktop\C_sharp_course\obj\Debug\net9.0\ref\C_sharp_course.dll

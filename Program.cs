@@ -496,3 +496,185 @@
 //     }
 // }
 
+// encapsulation
+// Encapsulation is one of the four main pillars of Object-Oriented Programming (OOP).
+// It means wrapping data (fields) and methods (functions) together into a single unit (class) and restricting direct access to some of the object’s data.
+
+// class Person
+// {
+//     // 1. Private member
+//     private int age;
+
+//     // 2. Public method (to access private data)
+//     public void SetAge(int a)
+//     {
+//         age = a;
+//     }
+
+//     // 3. Protected member
+//     protected string name;
+// }
+
+// class Student : Person
+// {
+//     public void SetName(string n)
+//     {
+//         name = n; // protected member accessed in child class
+//     }
+
+//     public void Show()
+//     {
+//         Console.WriteLine("Name: " + name);
+//     }
+// }
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Student s = new Student();
+
+//         // Public access
+//         s.SetAge(18);     // allowed (public method)
+//         s.SetName("Alex");
+
+//         s.Show();
+
+//         // s.age; ❌ Not allowed (private)
+//         // s.name; ❌ Not allowed (protected)
+//     }
+// }
+
+
+// Abstraction Oops
+// Abstraction means hiding the internal implementation and showing only what is necessary to the user.
+
+// Real-life example:
+// You use an ATM to withdraw money.
+// You don’t know how the machine processes it internally—you only see the options.
+
+// What is an Interface?
+// An interface Contains only abstract methods (methods without a body)
+// Specifies what a class must do
+// Is used to achieve 100% abstraction
+
+// Abstract class (Abstraction)
+// abstract class Animal
+// {
+//     public abstract void Sound();  // Abstract method (No body)
+//     public abstract void Sleep();
+// }
+
+// // Concrete class that inherits from the abstract class
+// class Dog : Animal
+// {
+//     public override void Sound()
+//     {
+//         Console.WriteLine("Dog barks");
+//     }
+
+//     public override void Sleep()
+//     {
+//         Console.WriteLine("Dog sleeps at night");
+//     }
+// }
+
+// class Cat : Animal
+// {
+//     public override void Sound()
+//     {
+//         Console.WriteLine("Cat meows");
+//     }
+
+//     public override void Sleep()
+//     {
+//         Console.WriteLine("Cat sleeps during the day");
+//     }
+// }
+
+// // Main class
+// class Program
+// {
+//     static void Main()
+//     {
+//         // Abstraction using an abstract class reference
+//         Animal animal1 = new Dog();
+//         animal1.Sound();
+//         animal1.Sleep();
+
+//         Animal animal2 = new Cat();
+//         animal2.Sound();
+//         animal2.Sleep();
+//     }
+// }
+
+
+// Explanation of Abstraction:
+// Animal is an abstract class, which defines the structure (abstract methods) but leaves the details to the derived classes (Dog and Cat).
+// Dog and Cat provide concrete implementations for Sound() and Sleep(), hiding the implementation details.
+// Main: We use the abstract class reference to interact with Dog and Cat objects, showcasing abstraction.
+
+
+using System;
+
+// Interface (Abstraction)
+// interface IAnimal
+// {
+//     void Sound();  // abstract method
+//     void Sleep();
+// }
+
+// // Class implementing the interface
+// class Dog : IAnimal
+// {
+//     public void Sound()
+//     {
+//         Console.WriteLine("Dog barks");
+//     }
+
+//     public void Sleep()
+//     {
+//         Console.WriteLine("Dog sleeps at night");
+//     }
+// }
+
+// // Another class implementing the interface
+// class Cat : IAnimal
+// {
+//     public void Sound()
+//     {
+//         Console.WriteLine("Cat meows");
+//     }
+
+//     public void Sleep()
+//     {
+//         Console.WriteLine("Cat sleeps during the day");
+//     }
+// }
+
+// // Main class
+// class Program
+// {
+//     static void Main()
+//     {
+//         // Abstraction using interface reference
+//         IAnimal animal1 = new Dog();
+//         animal1.Sound();
+//         animal1.Sleep();
+
+//         IAnimal animal2 = new Cat();
+//         animal2.Sound();
+//         animal2.Sleep();
+//     }
+// }
+
+
+// Explanation of Interface:
+// IAnimal is an interface, which defines methods like Sound() and Sleep() but doesn't provide any implementation.
+// Dog and Cat classes implement the interface and define how those methods should behave.
+// Main: We interact with the interface type (IAnimal) for abstraction, while the concrete implementations are provided by Dog and Cat.
+
+// Key Differences between Abstraction and Interface in C#:
+// Abstraction (using an abstract class) provides a partial implementation and defines abstract methods that must be implemented by subclasses.
+// Interface defines a contract (methods) with no implementation. Any class that implements the interface must provide its own implementation for the methods.
+// Abstract classes can have both abstract (without implementation) and concrete methods, while interfaces only contain method declarations.
