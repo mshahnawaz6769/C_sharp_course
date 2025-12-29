@@ -615,17 +615,15 @@
 // Main: We use the abstract class reference to interact with Dog and Cat objects, showcasing abstraction.
 
 
-using System;
 
 // Interface (Abstraction)
-// interface IAnimal
+// interface Animal
 // {
 //     void Sound();  // abstract method
 //     void Sleep();
 // }
 
-// // Class implementing the interface
-// class Dog : IAnimal
+// class Dog : Animal
 // {
 //     public void Sound()
 //     {
@@ -639,7 +637,7 @@ using System;
 // }
 
 // // Another class implementing the interface
-// class Cat : IAnimal
+// class Cat : Animal
 // {
 //     public void Sound()
 //     {
@@ -658,11 +656,11 @@ using System;
 //     static void Main()
 //     {
 //         // Abstraction using interface reference
-//         IAnimal animal1 = new Dog();
+//         Animal animal1 = new Dog();
 //         animal1.Sound();
 //         animal1.Sleep();
 
-//         IAnimal animal2 = new Cat();
+//         Animal animal2 = new Cat();
 //         animal2.Sound();
 //         animal2.Sleep();
 //     }
@@ -678,3 +676,104 @@ using System;
 // Abstraction (using an abstract class) provides a partial implementation and defines abstract methods that must be implemented by subclasses.
 // Interface defines a contract (methods) with no implementation. Any class that implements the interface must provide its own implementation for the methods.
 // Abstract classes can have both abstract (without implementation) and concrete methods, while interfaces only contain method declarations.
+
+// Abstraction example question
+// abstract class Vehicle{
+//     public abstract void StartEngine();
+//     public void StopEngine() {
+//         Console.WriteLine("Engine stopped");
+//     }
+// }
+
+// class Car : Vehicle{
+//     public override void StartEngine() {
+//         Console.WriteLine("Car engine started");
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         Car v_car = new Car();
+//         v_car.StopEngine();
+//     }
+// }
+
+// question for interface
+
+// Problem 1
+
+// interface IPrintable{
+//     void Print();
+// }
+
+// class Document : IPrintable{
+//     public void Print() {
+//         Console.WriteLine("Printing Document");
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         Document d = new Document();
+//         d.Print();
+//     }
+// }
+
+// Problem 2
+
+// interface IReadable{
+//     void Read();
+// }
+// interface IWritable{
+//     void Write();
+// }
+
+// class FileHandler : IReadable, IWritable{
+//     public void Read(){
+//         Console.WriteLine("Reading file");
+//     }
+//     public void Write(){
+//         Console.WriteLine("Writing file");
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         FileHandler file = new FileHandler();
+//         file.Read();
+//         file.Write();
+//     }
+// }
+
+
+// Problem 3
+
+// interface IEmployee{
+//     int salary();
+//     void DisplaySalary();
+// }
+
+// class Manager : IEmployee{
+//     public void salary() {
+
+//     }
+//     public void DisplaySalary() {
+//         Console.WriteLine(salary());
+//     }
+// }
+
+// class Program{
+//     static void Main(string[] args) {
+//         Manager m_s = new Manager();
+//         m_s.salary(20,30);
+//         m_s.DisplaySalary();
+//     }
+// }
+
+try {
+    int[] muNumbers = {1,2,3};
+    Console.WriteLine(muNumbers[10]);
+}
+catch(Exception e) {
+    Console.WriteLine(e.Message);
+}
